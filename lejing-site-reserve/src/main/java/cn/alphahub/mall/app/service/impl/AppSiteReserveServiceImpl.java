@@ -28,6 +28,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 import java.util.Random;
 import java.util.stream.Collectors;
 
@@ -91,8 +92,12 @@ public class AppSiteReserveServiceImpl implements AppSiteReserveService {
         SiteReserveDetailVO detailVO = new SiteReserveDetailVO();
         // 查主表
         SiteReserve siteReserve = siteReserveService.getById(siteId);
+
         // 预约量
-        int weekReserveCount = siteUtil.getWeekReserveCount(siteReserve.getSiteId(), 0);
+        int weekReserveCount = 0;
+        if (Objects.nonNull(siteReserve)) {
+            weekReserveCount = siteUtil.getWeekReserveCount(siteReserve.getSiteId(), 0);
+        }
 
         detailVO.setSiteId(siteId);
         detailVO.setProjectId("LJ12123232443");
