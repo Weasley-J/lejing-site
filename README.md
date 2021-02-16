@@ -40,7 +40,7 @@
 Version |  Update Time  | Status | Author |  Description
 ---|---|---|---|---
 1.0|2020-12-31 10:30|创建|Weasley J|创建api文档
-1.1|2021-02-03 14:02|更新|Weasley J|版本升级
+1.1|2021-02-16 14:02|更新|Weasley J|版本升级
 
 
 
