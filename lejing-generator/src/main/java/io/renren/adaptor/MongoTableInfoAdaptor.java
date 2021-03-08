@@ -1,7 +1,5 @@
 package io.renren.adaptor;
 
-import io.renren.entity.mongo.MongoDefinition;
-import io.renren.entity.mongo.Type;
 
 import java.util.ArrayList;
 import java.util.HashMap;
